@@ -23,9 +23,11 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    color: var(--db-text);
 }
 .row{
     width: 100%;
+    max-width: 1159px;
 }
 .d-flex
 {
@@ -34,12 +36,33 @@ body{
 ul{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+    color: var(--db-text);
+}
+a:active{
+    color: var(--db-text);
+}
+.col-6{
+    width: calc((100% / 12) * 6);
+}
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+.col-9{
+    width: calc((100% / 12) * 9);
+}
 /* debug */
+.debug .col-6{
+    background-color: purple;
+}
 
 /* #region header */
-header{
+nav{
     position: fixed;
     width: 100%;
+    background-color: white;
+    justify-content: center;
 }
 header .row{
     justify-content: space-between;
@@ -55,5 +78,45 @@ header li a{
 
 
 /* #endregion header */
+/* #region main */
+main{
+    
+}
+/* intro section */
+.intro{
+    padding-top: 90px;
+    padding-left: 23rem;
+    padding-right: 23rem;
+    height: 42rem;
+    background-color: var(--db-bkintro);
+}
+/* principal row */
 
+.intro > .col{
+    padding-top: 6.25rem;
+}
+.col h1{
+    padding-top: 6rem;
+    font-size: 2.5rem;
+    padding-right: 10rem;
+}
+/* secondary row */
+.img{
+    position: relative;
+}
+.intro .col-3{
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.7rem;
+ }
+.intro button{
+    width: 130px;
+}
+.intro img{
+    position: absolute;
+    width: 800px;
+    top: 0;
+    left: -20px;
+}
+/* #endregion main */
 
