@@ -1,0 +1,26 @@
+/* utilitys */
+:root{
+    /* basic colors */
+    --db-text: #080808;
+    --db-buttom: #0061ff;
+    --db-bkintro: #b4d0e7;
+    --db-bkfooter: #000000;
+    /* colors square */
+    --db-greensquare: #a2d39b;
+    --db-bordesquare: #d1e9cd;
+    --db-bordòsquare: #61082b;
+    --db-lightblusquare: #0093ce;
+    --db-lightorangesquare: #ff1c1c;
+    --db-centrasquare: #f5f5f5;
+    --db-redsquare: #d5001f;
+    --db-bluesquare: #0d2481;
+    --db-yellowsquare: #ffd830;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
