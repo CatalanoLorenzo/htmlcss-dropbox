@@ -108,7 +108,7 @@ main{
 .intro > .row{
     flex-direction: column;
     width: calc((100% / 12) * 6);
-    height: 22rem;
+    height: 24rem;
     background-color: var(--db-bkintro);
 }
 
@@ -221,6 +221,7 @@ justify-content: center;
 }
 /* #endregion business section */
 /* #region partner section */
+
 .partner{
     justify-content: center;
     width: calc((100% / 12) * 7);
@@ -238,5 +239,30 @@ justify-content: center;
     padding: 1rem;
 }
 /* #endregion partner section */
+/* #region operatio business section */
+
+.operationb{
+    justify-content: center;
+    width: calc((100% / 12) * 7);
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+.operationb .row{
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.operationb .col-4{
+    padding: 1rem;
+}
+.operationb img{
+    max-width: 100%;
+}
+.operationb .col-4 .row .col *{
+    padding: 0.5rem;
+}
+
+/* #endregion operatio business section */
+
 /* #endregion main */
+
 
