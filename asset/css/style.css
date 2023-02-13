@@ -36,11 +36,11 @@ body{
 ul{
     list-style-type: none;
 }
-a{
+header a{
     text-decoration: none;
     color: var(--db-text);
 }
-a:active{
+header a:active{
     color: var(--db-text);
 }
 .col-6{
@@ -123,14 +123,38 @@ main{
 }
 /* #endregion intro section */
 /* #region business section */
+.business{
+    justify-content: center;
+}
 .business .row .col:nth-child(3){
     justify-content: center;
+    padding: 0 0.5rem;
 }
 .card{
     border: 1px solid lightgray;
+    flex-direction: column;
+    padding: 1rem;
+
 }
+.title{
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 1rem;
 
-
+}
+.card h4{
+    font-size: 1.5rem;
+}
+.card .col *{
+    padding: 1rem 0;
+}
+.tryb{
+justify-content: center;
+}
+.or_buy{
+    text-decoration: underline;
+}
 /* #endregion business section */
 /* #endregion main */
 
