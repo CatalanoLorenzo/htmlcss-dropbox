@@ -88,8 +88,8 @@ main{
 /* #region intro section */
 .intro{
     padding-top: 90px;
-    padding-left: 23rem;
-    padding-right: 23rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     height: 42rem;
     background-color: var(--db-bkintro);
 }
@@ -125,23 +125,30 @@ main{
 /* #region business section */
 .business{
     justify-content: center;
+    padding: 0 20rem;
 }
 .business .row .col:nth-child(3){
     justify-content: center;
     padding: 0 0.5rem;
 }
+/* card */
+.business .col-6{
+}
 .card{
     border: 1px solid lightgray;
     flex-direction: column;
     padding: 1rem;
+    min-height: 52rem;
+
 
 }
 .title{
     border-top: 1px solid lightgray;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
-    padding: 1rem;
-
+    padding: 0.7rem;
+    justify-content: center;
+    font-size: 1rem;
 }
 .card h4{
     font-size: 1.5rem;
@@ -154,6 +161,10 @@ justify-content: center;
 }
 .or_buy{
     text-decoration: underline;
+}
+.bord{
+    width: 60px;
+    border-bottom: 1px solid lightgray;
 }
 /* #endregion business section */
 /* #endregion main */
