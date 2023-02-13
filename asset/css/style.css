@@ -56,6 +56,9 @@ a:active{
 .debug .col-6{
     background-color: purple;
 }
+.col{
+    background-color: green;
+}
 
 /* #region header */
 nav{
@@ -82,7 +85,7 @@ header li a{
 main{
     
 }
-/* intro section */
+/* #region intro section */
 .intro{
     padding-top: 90px;
     padding-left: 23rem;
@@ -118,5 +121,16 @@ main{
     top: 0;
     left: -20px;
 }
+/* #endregion intro section */
+/* #region business section */
+.business .row .col:nth-child(3){
+    justify-content: center;
+}
+.card{
+    border: 1px solid lightgray;
+}
+
+
+/* #endregion business section */
 /* #endregion main */
 
