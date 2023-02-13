@@ -43,11 +43,17 @@ header a{
 header a:active{
     color: var(--db-text);
 }
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+.col-4{
+    width: calc((100% / 12) * 4);
+}
 .col-6{
     width: calc((100% / 12) * 6);
 }
-.col-3{
-    width: calc((100% / 12) * 3);
+.col-8{
+    width: calc((100% / 12) * 8);
 }
 .col-9{
     width: calc((100% / 12) * 9);
@@ -132,15 +138,16 @@ main{
     padding: 0 0.5rem;
 }
 /* card */
+.row_card{
+    max-width: 1159px;
+}
 .business .col-6{
+    padding: 0 1rem;
 }
 .card{
     border: 1px solid lightgray;
     flex-direction: column;
     padding: 1rem;
-    min-height: 52rem;
-
-
 }
 .title{
     border-top: 1px solid lightgray;
@@ -149,6 +156,11 @@ main{
     padding: 0.7rem;
     justify-content: center;
     font-size: 1rem;
+    
+}
+/* section top cards*/
+.section_top{
+    min-height: 26rem;
 }
 .card h4{
     font-size: 1.5rem;
@@ -165,6 +177,25 @@ justify-content: center;
 .bord{
     width: 60px;
     border-bottom: 1px solid lightgray;
+}
+/* section center cards */
+.section_center{
+    min-height: 10rem;
+}
+
+/* section bottom cards */
+.section_bottom{
+    min-height: 30rem;
+}
+/* card team */
+.card_team{
+    padding: 1rem 1.5rem;
+
+}
+.card_team > .col{
+    border: 1px solid lightgray;
+    padding: 1rem;
+    justify-content: center;
 }
 /* #endregion business section */
 /* #endregion main */
