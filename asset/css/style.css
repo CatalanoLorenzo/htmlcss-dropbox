@@ -68,12 +68,13 @@ header a:active{
 .debug .col-6{
     background-color: purple;
 }
-.col{
+.debug .col{
     background-color: green;
 }
 
 /* #region header */
 nav{
+    height: 5rem;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -86,7 +87,7 @@ header li{
     padding: 2rem 0;
 }
 header li a{
-    font-size: 1rem;
+    font-size: 0.7rem;
     padding: 0 1.25rem;
 }
 
@@ -99,21 +100,28 @@ main{
 }
 /* #region intro section */
 .intro{
-    padding-top: 90px;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    height: 42rem;
+    padding: 5rem 0;
+    margin: auto;
+    justify-content: center;
     background-color: var(--db-bkintro);
 }
+.intro > .row{
+    flex-direction: column;
+    padding-top: 1.5rem;
+    width: calc((100% / 12) * 6);
+    height: 26rem;
+    background-color: var(--db-bkintro);
+}
+
 /* principal row */
 
 .intro > .col{
-    padding-top: 6.25rem;
+    
+    justify-content: center;
 }
 .col h1{
-    padding-top: 6rem;
     font-size: 2.5rem;
-    padding-right: 10rem;
+    padding: 2rem 2.5rem;
 }
 /* secondary row */
 .img{
@@ -137,7 +145,15 @@ main{
 /* #region business section */
 .business{
     justify-content: center;
-    padding: 0 20rem;
+    width: calc((100% / 12) * 7);
+    margin: auto;
+    padding-top: 8rem;
+}
+.business .row .col h2{
+    padding: 2rem 0;
+}
+.business .row .col:nth-child(2){
+    padding: 2rem 0;
 }
 .business .row .col:nth-child(3){
     justify-content: center;
@@ -210,7 +226,8 @@ justify-content: center;
 /* #region partner section */
 .partner{
     justify-content: center;
-    padding: 0 20rem;
+    width: calc((100% / 12) * 7);
+    margin: auto;
 }
 .partner .row{
     max-width: 1159px;
