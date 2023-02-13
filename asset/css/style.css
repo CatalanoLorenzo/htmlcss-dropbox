@@ -43,6 +43,9 @@ header a{
 header a:active{
     color: var(--db-text);
 }
+.col-2{
+    width: calc((100% / 12) * 2);
+}
 .col-3{
     width: calc((100% / 12) * 3);
 }
@@ -54,6 +57,7 @@ header a:active{
 }
 .col-6{
     width: calc((100% / 12) * 6);
+    height: calc((100% / 12) * 6);
 }
 .col-7{
     width: calc((100% / 12) * 7);
@@ -65,9 +69,9 @@ header a:active{
     width: calc((100% / 12) * 9);
 }
 /* debug */
-.debug .col-6{
+/* .debug .col-6{
     background-color: purple;
-}
+} */
 .debug .col{
     background-color: green;
 }
@@ -167,6 +171,7 @@ main{
     border: 1px solid lightgray;
     flex-direction: column;
     padding: 1rem;
+    min-height: 100%;
 }
 .title{
     border-top: 1px solid lightgray;
@@ -208,8 +213,7 @@ justify-content: center;
 }
 /* card team */
 .card_team{
-    padding: 3rem 1.5rem;
-
+    padding: 5rem 1.5rem;
 }
 .card_team > .col{
     border: 1px solid lightgray;
@@ -275,6 +279,69 @@ justify-content: center;
     padding: 3rem 0;
 }
 /* #endregion more team section */
+/* #region squares section */
+.squares > .row_squares{
+    justify-content: space-between;
+    width: 100%;
+}
+.row_squares .row{
+    height: 21rem;
+}
+.col_left .row{
+    flex-wrap: wrap;
+}
+.col_right .row{
+    flex-wrap: wrap;
+}
+.squares .col-6{
+    justify-content: center;
+    align-items: center;
+}
+.col-6 svg{
+    fill: white;
+    width: 50%;
+}
+/* square left */
+.col_left .col-6:nth-child(1){
+    background-color: var(--db-greensquare);
+    border: 0.5rem solid var(--db-bordesquare);  
+}
+.col_left .col-6:nth-child(1) svg{
+    width: 50%;
+}
+.col_left .col-6:nth-child(2){
+    background-color: var(--db-bordòsquare);
+}
+.col_left .col-6:nth-child(2) svg{
+    width: 50%;
+}
+.col_left .col-6:nth-child(3){
+    background-color: var(--db-lightblusquare);
+}
+.col_left .col-6:nth-child(3) svg{
+    width: 50%;
+    max-height: 100%;
+}
+.col_left .col-6:nth-child(4){
+    background-color: var(--db-redsquare);
+}
+/* square right */
+.col_right .col-6:nth-child(1){
+    background-color: var(--db-redsquare);
+}
+.col_right .col-6:nth-child(2){
+    background-color: var(--db-bkintro);
+}
+.col_right .col-6:nth-child(3){
+    background-color: var(--db-bluesquare);
+}
+.col_right .col-6:nth-child(4){
+    background-color: var(--db-yellowsquare);
+}
+
+
+
+/* #endregion squares section */
 /* #endregion main */
 
 
