@@ -262,7 +262,19 @@ justify-content: center;
 }
 
 /* #endregion operatio business section */
-
+/* #region more team section */
+.more_team{
+    width: calc((100% / 12) * 7);
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+.more_team .col-7 > h2{
+    font-size: 2rem;
+}
+.more_team .col-7 *{
+    padding: 3rem 0;
+}
+/* #endregion more team section */
 /* #endregion main */
 
 
