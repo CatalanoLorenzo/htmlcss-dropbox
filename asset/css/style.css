@@ -24,3 +24,36 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.row{
+    width: 100%;
+}
+.d-flex
+{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+/* debug */
+
+/* #region header */
+header{
+    position: fixed;
+    width: 100%;
+}
+header .row{
+    justify-content: space-between;
+}
+header li{
+    padding: 2rem 0;
+}
+header li a{
+    font-size: 1rem;
+    padding: 0 1.25rem;
+}
+
+
+
+/* #endregion header */
+
+
