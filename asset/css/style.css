@@ -233,8 +233,9 @@ header li:hover {
 .section_bottom{
     min-height: 30rem;
 }
-.try{
+.try button{
     width: 100%;
+    padding: 1rem 0.5rem;
 }
 /* card team */
 .card_team{
