@@ -99,10 +99,10 @@ nav{
     flex-wrap: wrap;
     z-index: 20;
     height: 48px;
+    border-bottom: 1px solid lightgray;
 }
 header .row{
     justify-content: space-between;
-    border-bottom: 1px solid lightgray;
 }
 header li{
     padding: 0.5rem 1rem;
