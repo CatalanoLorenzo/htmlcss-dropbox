@@ -198,6 +198,7 @@ header li:hover {
     padding: 0.7rem;
     justify-content: center;
     font-size: 1rem;
+    align-items: center;
     
 }
 /* section top cards*/
@@ -246,6 +247,7 @@ header li:hover {
     border: 1px solid lightgray;
     padding: 0.7rem;
     justify-content: center;
+    align-items: center;
 }
 .col-8 p{
     font-size: 0.7rem;
@@ -267,8 +269,14 @@ header li:hover {
 .partner img{
     max-width: 100%;
 }
-.partner .col-5 *{
+.partner .col-5 > *{
     padding: 1rem;
+}
+.partner_button button{
+    background-color: white;
+    color: var(--db-bkfooter);
+    border: 1px solid var(--db-bkfooter);
+    padding: 0.5rem 0.5rem;
 }
 /* #endregion partner section */
 /* #region operatio business section */
@@ -392,6 +400,12 @@ header li:hover {
 }
 .row_bottom .col-6{
     padding: 4rem;
+}
+.row_bottom .tryb button{
+    background-color: #f5f5f5;
+    color: rgb(56, 55, 55);
+    border: 0;
+    padding: 0.5rem 2rem;
 }
 /* #endregion squares section */
 /* #region faq section */
