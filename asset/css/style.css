@@ -130,20 +130,19 @@ header li:hover {
     background-color: var(--db-bkintro);
 }
 
-/* principal row */
+/* #region title intro section */
 
-.intro > .col{
+.intro > .title{
     
     justify-content: center;
 }
-.col h1{
+.title h1{
     font-size: 3rem;
     padding: 2rem 1rem;
 }
-/* secondary row */
-.img{
-    position: relative;
-}
+/* #endregion title intro section  */
+/* #region container */
+/* #region text area */
 .intro .col-4{
     flex-direction: column;
     justify-content: center;
@@ -156,11 +155,18 @@ header li:hover {
     font-size: 1.5rem;
     color: black;
  }
+ /* #endregion text area */
+/* #region img area */
+ .img{
+    position: relative;
+}
 .intro img{
     position: absolute;
     max-width: 100%;
     bottom: -24rem;
 }
+/* #endregion img area */
+/* #endregion container */
 /* #endregion intro section */
 /* #region business section */
 .business{
@@ -172,53 +178,66 @@ header li:hover {
 .business .row .col h2{
     padding: 2rem 0;
 }
-.business .row .col:nth-child(2){
+.pay_mode{
     padding: 2rem 0.5rem;
 }
 
 .business .row .col:nth-child(3){
     padding: 0 0.5rem;
 }
+
 /* card */
 .row_card{
     max-width: 1159px;
 }
 .business .col-4{
-    padding: 0 1rem;
     flex-direction: column;
-}
-.card{
-    
-    flex-direction: column;
-    padding: 1rem;
     border: 1px solid lightgray;
-    min-height: 100%;
+    margin: 0 1rem;
+}
+
+.business .card{
+    padding: 1rem;
+    border-top: 1px solid lightgray;
+    height: 100%;
 }
 .title{
-    border-top: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
     padding: 0.7rem;
     justify-content: center;
     font-size: 1rem;
     align-items: center;
-    
 }
-/* section top cards*/
-.section_top{
-    min-height: 30rem;
+.card .col{
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card section > *{
+    padding: 1rem 0;
+}
+/* #region section top cards*/
+
+.section_top h4{
+    font-size: 1.5rem;
 }
 .section_top span{
     color: gray;
 }
-.card h4{
-    font-size: 1.5rem;
+.section_top li{
+    padding: 1rem 0; 
 }
-.card .col section > *{
-    padding: 1rem 0;
+.section_bottom li p{
+    line-height: 1;
+    padding-left: 0.5rem;
+
 }
-.card .col{
-    min-height: 100%;
+/* #endregion section top cards */
+/* #region section center cards */
+.section_center{
+    height: 32%;
+}
+.try button{
+    width: 100%;
+    padding: 1rem 0.5rem;
 }
 .or_buy{
     text-decoration: underline;
@@ -227,17 +246,8 @@ header li:hover {
     width: 60px;
     border-bottom: 1px solid lightgray;
 }
-
-.section_top li{
-    padding: 1rem 0; 
-}
-.section_bottom li p{
-    line-height: 1;
-    padding-left: 0.5rem;
-}
-/* section center cards */
-
-/* section bottom cards */
+/* #endregion section center cards */
+/* #region section bottom cards */
 .section_bottom li{
     padding: 1rem 0; 
 }
@@ -248,20 +258,20 @@ header li:hover {
     line-height: 1;
     padding-left: 0.5rem;
 }
-.try button{
-    width: 100%;
-    padding: 1rem 0.5rem;
-}
-
+/* #endregion section bottom cards */
 /* card team */
 .card_team{
-    padding: 6rem 1.5rem;
-}
-.card_team > .col{
     border: 1px solid lightgray;
+    margin: 3rem 1rem;
+}
+.card_team > .conteiner{
+    border-top: 1px solid lightgray;
     padding: 0.7rem;
     justify-content: center;
     align-items: center;
+}
+.card_team > .conteiner > .col-4{
+    border: 0;
 }
 .col-8 p{
     font-size: 0.7rem;

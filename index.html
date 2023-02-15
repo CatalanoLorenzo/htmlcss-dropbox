@@ -19,7 +19,7 @@
     <header>
         <nav class="d-flex">
             <div class="row d-flex">
-                <div class="col">
+                <div class="left">
                     <ul class=" d-flex">
                         <li>
                             <img src="./asset/img/logo-small.png" alt="">
@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="right">
                     <ul class=" d-flex">
                         <li>
                             <a href="#support">
@@ -71,7 +71,8 @@
     <main>
         <section class="intro d-flex">
             <div class="row d-flex">
-                <div class="col">
+                <!-- title intro section -->
+                <div class="title">
                     <h1>
                         Tutto ciò che ti
                         serve per il
@@ -79,8 +80,9 @@
                         unico posto
                     </h1>
                 </div>
-                <div class="col">
+                <div class="container">
                     <div class="row d-flex">
+                        <!-- text area -->
                         <div class="col-4 d-flex">
                             <p>
                                 Finalmente tutti i tuoi
@@ -107,6 +109,7 @@
                                 </a>
                             </div>
                         </div>
+                        <!-- img area -->
                         <div class="col-8">
                             <div class="img">
                                 <img src="./asset/img/jumbo.png" alt="">
@@ -119,13 +122,13 @@
         <section class="business d-flex" id="business">
             <div class="row">
                 <!-- title section -->
-                <div class="col">
+                <div class="title">
                     <h2>
                         Trova il piano business che fa per te
                     </h2>
                 </div>
                 <!-- selcet pay mode -->
-                <div class="col">
+                <div class="pay_mode">
                     <span>
                         <input type="radio"> Fatturazione mensile
                     </span>
@@ -134,259 +137,262 @@
                     </span>
                 </div>
                 <!-- three cards -->
-                <div class="col">
-                    <div class="row_card d-flex">
-                        <!-- one user -->
-                        <div class="col-4 d-flex">
-                            <div class="row d-flex title">
-                                <i class="fa-solid fa-user"></i>
-                                <h3>Singolo</h3>
-                            </div>
-                            <div class="row d-flex card">
-                                <div class="col">
-                                    <section class="section_top">
-
-                                        <h4>
-                                            Professional
-                                        </h4>
-                                        <p>
-                                            € 12.00 <span> /mese</span>
-                                        </p>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-user"></i>
-                                                <p> 1 utente</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-folder"></i>
-                                                <p> 5 TB di spazio di archiviazione sicuro</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-share-nodes"></i>
-                                                <p> Funzioni di produttività premium e
-                                                    condivisione file semplice e sicura
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="section_center">
-                                        <div class="try d-flex">
-                                            <button>
-                                                Prova gratis per
-                                                30 giorni
-                                            </button>
-                                        </div>
-                                        <p class="">
-                                            oppure <a class="or_buy" href="">acquista ora</a>
-                                        </p>
-                                        <div class="bord"></div>
-                                    </section>
-                                    <section class="section_bottom">
-                                        <h5>
-                                            Punti Salienti del piano
-                                        </h5>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Invia file fino a 100 GB con Dropbox
-                                                    Transfert
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Cartelle offline su
-                                                    dispositivi mobili
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                </div>
+                <div class="row_card d-flex">
+                    <!-- one user -->
+                    <div class="col-4 d-flex">
+                        <!-- title -->
+                        <div class="title d-flex">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>Singolo</h3>
+                        </div>
+                        <!-- card -->
+                        <div class="row d-flex card">
+                            <div class="col d-flex">
+                                <section class="section_top">
+                                    <h4>
+                                        Professional
+                                    </h4>
+                                    <p>
+                                        € 12.00 <span> /mese</span>
+                                    </p>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p> 1 utente</p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-folder"></i>
+                                            <p> 5 TB di spazio di archiviazione sicuro</p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            <p> Funzioni di produttività premium e
+                                                condivisione file semplice e sicura
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="section_center">
+                                    <div class="try d-flex">
+                                        <button>
+                                            Prova gratis per
+                                            30 giorni
+                                        </button>
+                                    </div>
+                                    <p class="">
+                                        oppure <a class="or_buy" href="">acquista ora</a>
+                                    </p>
+                                    <div class="bord"></div>
+                                </section>
+                                <section class="section_bottom">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Invia file fino a 100 GB con Dropbox
+                                                Transfert
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Cartelle offline su
+                                                dispositivi mobili
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </section>
                             </div>
                         </div>
-                        <!-- team user -->
-                        <div class="col-4 d-flex">
-                            <div class="row d-flex title">
-                                <i class="fa-solid fa-folder"></i>
-                                <h3>Team</h3>
-                            </div>
-                            <div class="row d-flex card">
-                                <div class="col">
-                                    <section class="section_top">
+                    </div>
+                    <!-- team user -->
+                    <div class="col-4 d-flex">
+                        <div class="row d-flex title">
+                            <i class="fa-solid fa-folder"></i>
+                            <h3>Team</h3>
+                        </div>
+                        <div class="row d-flex card">
+                            <div class="col d-flex">
+                                <section class="section_top">
 
-                                        <h4>
-                                            Advance
-                                        </h4>
-                                        <p>
-                                            € 18.00 <span> /utente/mese</span>
-                                        </p>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-users"></i>
-                                                <p> 3 o più utente</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-folder"></i>
-                                                <p> Tutto lo spazio di cui
-                                                    ha bisogno il tuo
-                                                    team
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-share-nodes"></i>
-                                                <p> Sofisticate funzioni
-                                                    di controllo e per
-                                                    tenere al sicuro tutti
-                                                    i file del tuo team
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="section_center">
-                                        <div class="try d-flex">
-                                            <button>
-                                                Prova gratis per
-                                                30 giorni
-                                            </button>
-                                        </div>
-                                        <p class="">
-                                            oppure <a class="or_buy" href="">acquista ora</a>
-                                        </p>
-                                        <div class="bord"></div>
-                                    </section>
-                                    <section class="section_bottom">
-                                        <h5>
-                                            Punti Salienti del piano
-                                        </h5>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Nessun limite dispazio per i
-                                                    file
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Cartelle offline su
-                                                    dispositivi mobili
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Rispario del 50% rispetto alle iscrizioni singole
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Po9ssibilità di inserire nuovi membri del team
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Gestione dei permessi di base ai ruoli
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                </div>
+                                    <h4>
+                                        Advance
+                                    </h4>
+                                    <p>
+                                        € 18.00 <span> /utente/mese</span>
+                                    </p>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-users"></i>
+                                            <p> 3 o più utente</p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-folder"></i>
+                                            <p> Tutto lo spazio di cui
+                                                ha bisogno il tuo
+                                                team
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            <p> Sofisticate funzioni
+                                                di controllo e per
+                                                tenere al sicuro tutti
+                                                i file del tuo team
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="section_center">
+                                    <div class="try d-flex">
+                                        <button>
+                                            Prova gratis per
+                                            30 giorni
+                                        </button>
+                                    </div>
+                                    <p class="">
+                                        oppure <a class="or_buy" href="">acquista ora</a>
+                                    </p>
+                                    <div class="bord"></div>
+                                </section>
+                                <section class="section_bottom">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Nessun limite dispazio per i
+                                                file
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Cartelle offline su
+                                                dispositivi mobili
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Rispario del 50% rispetto alle iscrizioni singole
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Po9ssibilità di inserire nuovi membri del team
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Gestione dei permessi di base ai ruoli
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </section>
                             </div>
                         </div>
-                        <!-- enterprise -->
-                        <div class="col-4 d-flex">
-                            <div class="row d-flex title">
-                                <i class="fa-solid fa-building"></i>
-                                <h3>Azienda</h3>
-                            </div>
-                            <div class="row d-flex card">
-                                <div class="col">
-                                    <section class="section_top">
-                                        <h4>
-                                            Enterprise
-                                        </h4>
-                                        <p>
-                                            Contattaci <span></span>
-                                        </p>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-user"></i>
-                                                <p> 10 o più utente</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-folder"></i>
-                                                <p> Soluzioni personalizzata
-                                                    per la tua azienda</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-share-nodes"></i>
-                                                <p> Assistenza
-                                                    personalizzata per
-                                                    aiutare gli
-                                                    amministratori in
-                                                    una gestione su
-                                                    larga scala</p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="section_center">
-                                        <div class="try d-flex">
-                                            <button>
-                                                Contattaci
-                                            </button>
-                                        </div>
-                                        <p class="">
-                                            oppure <a class="or_buy" href="">acquista ora</a>
-                                        </p>
-                                        <div class="bord"></div>
-                                    </section>
-                                    <section class="section_bottom">
-                                        <h5>
-                                            Punti Salienti del piano
-                                        </h5>
-                                        <ul>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Cartelle offline su
-                                                    dispositivi mobili
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Servizio assistenza
-                                                    24/h
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <i class="fa-solid fa-check"></i>
-                                                <p class="feature">
-                                                    Possibilità di personalizzazione totale
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                </div>
+                    </div>
+                    <!-- enterprise -->
+                    <div class="col-4 d-flex">
+                        <div class="title d-flex">
+                            <i class="fa-solid fa-building"></i>
+                            <h3>Azienda</h3>
+                        </div>
+                        <div class="d-flex card">
+                            <div class="col d-flex">
+                                <!-- TOP -->
+                                <section class="section_top">
+                                    <h4>
+                                        Enterprise
+                                    </h4>
+                                    <p>
+                                        Contattaci <span></span>
+                                    </p>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p> 10 o più utente</p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-folder"></i>
+                                            <p> Soluzioni personalizzata
+                                                per la tua azienda</p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            <p> Assistenza
+                                                personalizzata per
+                                                aiutare gli
+                                                amministratori in
+                                                una gestione su
+                                                larga scala</p>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <!-- CENTER -->
+                                <section class="section_center">
+                                    <div class="try d-flex">
+                                        <button>
+                                            Contattaci
+                                        </button>
+                                    </div>
+                                    <p class="">
+                                        oppure <a class="or_buy" href="">acquista ora</a>
+                                    </p>
+                                    <div class="bord"></div>
+                                </section>
+                                <!-- BOTTOM -->
+                                <section class="section_bottom">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Cartelle offline su
+                                                dispositivi mobili
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Servizio assistenza
+                                                24/h
+                                            </p>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i class="fa-solid fa-check"></i>
+                                            <p class="feature">
+                                                Possibilità di personalizzazione totale
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </section>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- team cards -->
-                <div class="col" id="team">
-                    <div class="row card_team">
+                    <div class="card_team id="team">
+                        <!-- title -->
                         <div class="col d-flex">
                             <i class="fa-solid fa-building"></i>
                             <h3>
                                 Team
                             </h3>
                         </div>
-                        <div class="col">
-                            <div class="row d-flex">
+                        <!-- conteiner-->
+                            <div class="conteiner d-flex">
+                                <!-- text area -->
                                 <div class="col-8">
                                     <h3>
                                         Enterprise
@@ -399,6 +405,7 @@
                                         per aiutare i professionisti IT nella gestione su qualsiasi scala.
                                     </p>
                                 </div>
+                                <!-- bottom area -->
                                 <div class="col-4">
                                     <button>
                                         Contatta l'ufficio
@@ -406,9 +413,7 @@
                                     </button>
                                 </div>
                             </div>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
         <section class="partner d-flex">
