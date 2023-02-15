@@ -70,7 +70,6 @@ button{
 }
 .col-6{
     width: calc((100% / 12) * 6);
-    height: calc((100% / 12) * 6);
 }
 .col-7{
     width: calc((100% / 12) * 7);
@@ -173,11 +172,10 @@ header li:hover {
     padding: 2rem 0;
 }
 .business .row .col:nth-child(2){
-    padding: 2rem 0;
+    padding: 2rem 0.5rem;
 }
 
 .business .row .col:nth-child(3){
-    justify-content: center;
     padding: 0 0.5rem;
 }
 /* card */
@@ -205,7 +203,7 @@ header li:hover {
 }
 /* section top cards*/
 .section_top{
-    min-height: 26rem;
+    min-height: 30rem;
 }
 .section_top span{
     color: gray;
@@ -228,22 +226,15 @@ header li:hover {
     padding-left: 0.5rem;
 }
 /* section center cards */
-.section_center{
-    min-height: 10rem;
-}
 
 /* section bottom cards */
-.section_bottom{
-    min-height: 30rem;
-}
 .try button{
     width: 100%;
     padding: 1rem 0.5rem;
 }
 /* card team */
 .card_team{
-    margin: 48px;
-    padding: 5rem 1.5rem;
+    padding: 6rem 1.5rem;
 }
 .card_team > .col{
     border: 1px solid lightgray;
@@ -327,6 +318,7 @@ header li:hover {
 .squares .col-6{
     justify-content: center;
     align-items: center;
+    height: calc((100% / 12) * 6);
 }
 .col-6 svg{
     fill: white;
