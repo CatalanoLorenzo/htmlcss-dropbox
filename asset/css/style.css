@@ -154,6 +154,7 @@ header li:hover {
  }
  .intro .col-4 i{
     font-size: 1.5rem;
+    color: black;
  }
 .intro img{
     position: absolute;
@@ -182,13 +183,15 @@ header li:hover {
 .row_card{
     max-width: 1159px;
 }
-.business .col-6{
+.business .col-4{
     padding: 0 1rem;
+    flex-direction: column;
 }
 .card{
-    border: 1px solid lightgray;
+    
     flex-direction: column;
     padding: 1rem;
+    border: 1px solid lightgray;
     min-height: 100%;
 }
 .title{
@@ -214,6 +217,9 @@ header li:hover {
 .card .col section > *{
     padding: 1rem 0;
 }
+.card .col{
+    min-height: 100%;
+}
 .or_buy{
     text-decoration: underline;
 }
@@ -221,17 +227,32 @@ header li:hover {
     width: 60px;
     border-bottom: 1px solid lightgray;
 }
-.section_top .d-flex p{
+
+.section_top li{
+    padding: 1rem 0; 
+}
+.section_bottom li p{
     line-height: 1;
     padding-left: 0.5rem;
 }
 /* section center cards */
 
 /* section bottom cards */
+.section_bottom li{
+    padding: 1rem 0; 
+}
+.section_bottom li i{
+    color: var(--db-buttom)
+}
+.section_bottom li p{
+    line-height: 1;
+    padding-left: 0.5rem;
+}
 .try button{
     width: 100%;
     padding: 1rem 0.5rem;
 }
+
 /* card team */
 .card_team{
     padding: 6rem 1.5rem;
@@ -310,6 +331,7 @@ header li:hover {
 /* #region squares section */
 .squares > .row_squares{
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 .row_squares .row{
@@ -325,8 +347,14 @@ header li:hover {
     width: 50%;
 }
 /* square left */
+.col_left{
+    width: calc((100% /12) *4);
+}
 .col_left .row{
     flex-wrap: wrap;
+}
+.col_left .col-6{
+    height: 50%;
 }
 .col_left .col-6:nth-child(1){
     background-color: var(--db-greensquare);
@@ -357,6 +385,7 @@ header li:hover {
 }
 .col_center{
     padding: 2rem;
+    width: calc((100% /12) *8);
 }
 .ilogo svg{
     height: 3rem;
@@ -366,6 +395,9 @@ header li:hover {
     padding-top: 3rem;
 }
 /* square right */
+.col_right{
+    width: calc((100% /12) *4);
+}
 .col_right .row{
     flex-wrap: wrap;
 }
