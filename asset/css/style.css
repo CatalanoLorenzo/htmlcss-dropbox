@@ -373,7 +373,7 @@ header li:hover {
     background-color: var(--db-lightblusquare);
 }
 .col_left .col-6:nth-child(3) svg{
-    width: 50%;
+    width: 85%;
     max-height: 100%;
 }
 .col_left .col-6:nth-child(4){
