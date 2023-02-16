@@ -149,7 +149,7 @@ header li:hover {
     font-size: 0.7rem;
  }
  .intro .col-4 *{
-    padding: 0 1rem 1rem;
+    padding: 1rem;
  }
  .intro .col-4 i{
     font-size: 1.5rem;
@@ -458,15 +458,24 @@ header li:hover {
     padding: 2rem 0;
     border-bottom: 1px solid lightgray;
 }
-.row_quest{
+.col_faq{
     justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 }
 /* Questions */
-.ans{
+.quest_ans input{
     display: none;
-    transition: 5s;
 }
-.faq .col:active .ans{
+.ans1,.ans2,.ans3{
+    display: none;
+}
+input:checked ~ .ans1{
+    display: block;
+}
+input:checked ~ .ans2{
+    display: block;
+}
+input:checked ~ .ans3{
     display: block;
 }
 /* #endregion faq section */
