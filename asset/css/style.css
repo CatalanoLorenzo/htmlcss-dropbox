@@ -94,24 +94,27 @@ nav{
     width: 100%;
     background-color: white;
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
     z-index: 20;
-    height: 48px;
-    border-bottom: 1px solid lightgray;
+    box-shadow: -3px 1px 7px 6px lightgrey
 }
-header .row{
+nav .row{
     justify-content: space-between;
 }
-header li{
-    padding: 0.5rem 1rem;
-    
+nav ul{
+    align-items: center;
 }
-header li a{
-    font-size: 0.7rem;
+nav li{
+    padding: 0.7rem 0.6rem;
+    position: relative;
+    border-bottom: 2px solid #0061ff00;
+}
+nav li a{
+    font-size: 0.8rem;
 }
 /* transicion hover */
-header li:hover {
+nav li:hover {
+    box-sizing: border-box;
+    bottom: -2;
     border-bottom: 2px solid var(--db-buttom);
 }
 /* #endregion header */
@@ -465,6 +468,7 @@ header li:hover {
 .col_faq{
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
+    padding: 2rem 0;
 }
 /* Questions */
 .quest_ans input{
